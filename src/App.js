@@ -32,7 +32,7 @@ const App = () => {
     if (Notification.permission === 'granted') {
       new Notification(title, {
         body: body,
-        icon: 'https://placehold.co/128x128/000000/FFFFFF?text=🔔', // A simple icon for the notification
+        icon: '/logo.png', // A simple icon for the notification
       });
     } else if (Notification.permission !== 'denied') {
       // If permission is not 'denied', request it from the user
@@ -40,7 +40,7 @@ const App = () => {
         if (permission === 'granted') {
           new Notification(title, {
             body: body,
-            icon: 'https://placehold.co/128x128/000000/FFFFFF?text=🔔',
+            icon: '/logo.png',
           });
         }
       });
